@@ -1,0 +1,42 @@
+
+#firstRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+#secRow,#thirdRow,#fourthRow{
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+.filterHeader {
+    font-weight: bold;
+}
+
+#firstRow p{
+    font-size: 22px;
+    font-weight: bolder;
+}
+ hr{
+border: 1.5px solid black;
+}
+.hrContainer{
+    padding: 0.3rem 0rem 0.3rem 0rem;
+}
+#fourthRow{
+    font-size: 18px;
+    font-weight: bold;
+}
+#button__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.searchButton{
+    background-color: #597A76;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    width: 25%;
+    text-align: center;
+    color: white;
+}
