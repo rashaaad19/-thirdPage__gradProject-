@@ -1,4 +1,7 @@
+#overAll__container{
+    display: flex;
+}
 #leftSide__container{
-    width: 20%;
-    background-color: rgb(173, 173, 243);
+    width: 15%;
+    background-color: #e7f7ff;
 }

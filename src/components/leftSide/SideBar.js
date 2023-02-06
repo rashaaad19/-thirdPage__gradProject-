@@ -46,10 +46,11 @@ const SideBar=()=>{
         <p>Beaches</p>
         <p>Markets</p>
         </div>
+        </div>
+
         <div id='button__container'>
         <div className='searchButton'>
         Search
-        </div>
         </div>
         </div>
         </>

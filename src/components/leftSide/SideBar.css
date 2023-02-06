@@ -1,12 +1,16 @@
-
+#sidebar__container{
+    width: fit-content;
+}
 #firstRow{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0rem 0.5rem 0rem 0.5rem;
+    color: #072c3d;
 }
 #secRow,#thirdRow,#fourthRow{
     margin: 0rem 0.5rem 0rem 0.5rem;
+    color:#072c3d;
 }
 .filterHeader {
     font-weight: bold;
@@ -17,7 +21,7 @@
     font-weight: bolder;
 }
  hr{
-border: 1.5px solid black;
+border: 1.5px solid #072c3d;
 }
 .hrContainer{
     padding: 0.3rem 0rem 0.3rem 0rem;
@@ -25,7 +29,9 @@ border: 1.5px solid black;
 #fourthRow{
     font-size: 18px;
     font-weight: bold;
+    color:#072c3d;
 }
+
 #button__container{
     display: flex;
     flex-direction: column;
@@ -33,10 +39,25 @@ border: 1.5px solid black;
     padding-bottom: 1rem;
 }
 .searchButton{
-    background-color: #597A76;
+    background-color: #072c3d;
     padding: 0.5rem;
     border-radius: 2rem;
-    width: 25%;
+    width: 4rem;
     text-align: center;
     color: white;
+}
+.searchButton:hover{
+    cursor: pointer;
+    background-color: #072c3dd3;
+}
+.filterItems,#fourthRow p{
+    width: fit-content;
+}
+
+.filterItems p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#fourthRow p:hover {
+    cursor: pointer;
 }
