@@ -11,6 +11,8 @@ function App() {
   </div>
   <div id='rightSide__container'>
     <PlaceCard></PlaceCard>
+    <PlaceCard></PlaceCard>
+    <PlaceCard></PlaceCard>
   </div>
 </div>
   </>
