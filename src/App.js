@@ -13,6 +13,10 @@ function App() {
     <PlaceCard></PlaceCard>
     <PlaceCard></PlaceCard>
     <PlaceCard></PlaceCard>
+    <PlaceCard></PlaceCard>
+    <PlaceCard></PlaceCard>
+    <PlaceCard></PlaceCard>
+
   </div>
 </div>
   </>
