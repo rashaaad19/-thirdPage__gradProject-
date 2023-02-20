@@ -1,0 +1,77 @@
+#navbar__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #ECF6F9;
+    z-index: 1;
+}
+#navbarLogo{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+}
+#leftSide{
+    display: flex;
+    align-items: center;
+    color:#597A76
+}
+#leftSide p{
+    font-weight: Bold;
+    font-size: 1.5rem;
+}
+#middle{
+    display: flex;
+}
+#rightSide{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    color:#597A76
+}
+#rightSide p {
+    margin-left: 2rem;
+}
+#signUp{
+    color:#ECF6F9;
+    background-color: #072c3d;
+    padding:0.3rem;
+    border-radius: 1.813rem;
+    margin-left: 2rem;
+    width: 5rem;
+    text-align: center;
+}
+li{
+    list-style-type: none;
+    margin-left: 1rem;
+    color:#597A76
+}
+#signUp,.rightSide p, .middle p,#leftSide p, #leftSide img, #rightSide p{
+    cursor: pointer;
+}
+li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.burger__div {
+    width: 30px;
+    height: 3px;
+    background-color: #597A76;
+    margin: 6px 0;
+    display: none;
+
+  }
+  
+  @media (max-width:900px) {
+    .burger__div{
+display: block;
+    }
+    #signIn,#signUp{
+        display: none;
+    }
+    #middle{
+        display: none;
+    }
+}

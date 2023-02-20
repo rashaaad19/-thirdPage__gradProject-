@@ -45,3 +45,15 @@
     color: #072c3dd3;
     cursor: pointer;
 }
+@media (max-width:920px) {
+#card__container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0.5rem;
+    margin-left: 0px;
+}
+#leftSide__container{
+    width: 30%;
+}
+}

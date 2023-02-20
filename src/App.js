@@ -1,10 +1,13 @@
 import './App.css';
 import SideBar from './components/leftSide/SideBar';
+import Navbar from './components/Navbar';
 import PlaceCard from './components/rightSide/PlaceCard';
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
   <>
+    <Navbar></Navbar>
 <div id='overAll__container'>
   <div id='leftSide__container'>
     <SideBar></SideBar>
@@ -19,6 +22,7 @@ function App() {
 
   </div>
 </div>
+<Footer></Footer>
   </>
         );
 }
