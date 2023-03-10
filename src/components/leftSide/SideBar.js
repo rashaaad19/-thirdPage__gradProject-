@@ -1,6 +1,6 @@
 import './SideBar.css'
 import {AiFillFilter} from 'react-icons/ai'
-const SideBar=()=>{
+const SideBar=(props)=>{
     return(
         <>
         <div id='sidebar__container'>
@@ -43,7 +43,7 @@ const SideBar=()=>{
         <p>Resturants</p>
         <p>Museums</p>
         <p>Historic Buildings</p>
-        <p>Beaches</p>
+        <p onClick={props.onClick}>Beaches</p>
         <p>Markets</p>
         </div>
         </div>

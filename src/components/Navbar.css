@@ -1,77 +1,173 @@
-#navbar__container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    background-color: #ECF6F9;
-    z-index: 1;
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-#navbarLogo{
-    width: 3rem;
-    height: 3rem;
-    margin-right: 0.5rem;
+.registerButton{
+	background-color: inherit;
+	border: 1px solid white;
+	color: white;
+	transition: 0.7s ease;
+	margin: 0 0.5rem;
+	border-radius: 2rem;
+	width: 5rem;
+	height: 2rem;
+
 }
-#leftSide{
-    display: flex;
-    align-items: center;
-    color:#597A76
+.regMobile{
+	display: none;
 }
-#leftSide p{
-    font-weight: Bold;
-    font-size: 1.5rem;
+.registerButton:hover{
+	cursor: pointer;
+	background-color: white;
+	color: dodgerblue;
+	transition: 0.1s ease-in;
 }
-#middle{
-    display: flex;
+.nav-branding img{
+	width: 3rem;
+	height: 3rem;
 }
-#rightSide{
-    display: flex;
-    align-items: center;
-    margin-right: 1rem;
-    color:#597A76
+.nav-branding a{
+	margin-left: 0.5rem;
+	font-weight: 700;
+	font-size:1.1rem ;
+	font-family: cursive;
 }
-#rightSide p {
-    margin-left: 2rem;
-}
-#signUp{
-    color:#ECF6F9;
-    background-color: #072c3d;
-    padding:0.3rem;
-    border-radius: 1.813rem;
-    margin-left: 2rem;
-    width: 5rem;
-    text-align: center;
+.navbarBlue{
+	
 }
 li{
-    list-style-type: none;
-    margin-left: 1rem;
-    color:#597A76
+	list-style: none;
 }
-#signUp,.rightSide p, .middle p,#leftSide p, #leftSide img, #rightSide p{
-    cursor: pointer;
+a{
+	color: white;
+	text-decoration: none;
 }
-li:hover{
-    cursor: pointer;
-    text-decoration: underline;
+.nav-branding img{
+	cursor: pointer;
+}
+.navbar{
+	min-height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 24px;
+    background-color: #072c3d;
+	width: 100%;
+	z-index: 3;
+	transition: 0.3s;
+	margin-bottom: 3rem;
+	
+}
+.nav-menu{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 60px;
 }
 
-.burger__div {
-    width: 30px;
-    height: 3px;
-    background-color: #597A76;
-    margin: 6px 0;
-    display: none;
+.nav-branding{
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+}
 
-  }
-  
-  @media (max-width:900px) {
-    .burger__div{
-display: block;
-    }
-    #signIn,#signUp{
-        display: none;
-    }
-    #middle{
-        display: none;
-    }
+.nav-link{
+	transition: 0.7s ease;
+	font-size: 1rem;
+	font-weight: lighter;
+}
+.nav-link:hover{
+	color: dodgerblue;
+}
+.humburger{
+	display: none;
+	cursor: pointer;
+}
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	background-color: white;
+}
+.navbar.active{
+	position: fixed;
+}
+
+@media(min-width:768px){
+	.navbar.scroll{
+		position: fixed;
+		top: -100px;
+		transition: 0.1s ease-in-out;
+	}
+}
+@media(max-width:768px){
+	.navbar.active{
+		position: fixed;
+		background-color: #072c3d;
+	}
+	.register{
+		display: none;
+	}
+	.humburger{
+		display: block;
+	}
+	.humburger.active .bar:nth-child(2){
+		opacity: 0;
+	}
+	.humburger.active .bar:nth-child(1){
+		transform: translateY(8px) rotate(45deg);
+	}
+	.humburger.active .bar:nth-child(3){
+		transform: translateY(-8px) rotate(-45deg);
+	}
+	.navbarBlue{
+		position: fixed;
+	}
+	.nav-menu{
+	position: fixed;
+    left: 100rem;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #072c3d;
+    text-align: center;
+    transition: 0.5s;
+    width: 100%;
+	height: 100%;
+	}
+	.nav-item{
+		margin:16px 0;
+	}
+	
+	.nav-menu.active{
+		left: 0;
+		width: 100%;
+		position: fixed;
+		height: 100%;
+		}
+		.register.active{
+			display: block;
+		}
+		.regMobile{
+			display: flex;
+		}
+		.regMobile button{
+			background-color: dodgerblue;
+	margin: 0 0.5rem;
+	border-radius: 2rem;
+	width: 5rem;
+	height: 2rem;
+		}
+		.regMobile button:hover{
+	cursor: pointer;
+	background-color: white;
+	color: dodgerblue;
+	transition: 0.1s ease-in;
+		}
+		
+		
 }

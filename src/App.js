@@ -7,8 +7,10 @@ import Footer from './components/footer/Footer'
 function App() {
   return (
   <>
-    <Navbar></Navbar>
+  <Navbar></Navbar>
+
 <div id='overAll__container'>
+
   <div id='leftSide__container'>
     <SideBar></SideBar>
   </div>
